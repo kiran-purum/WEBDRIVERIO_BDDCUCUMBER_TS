@@ -45,7 +45,7 @@ class SignUpPage {
         await this.address1.setValue(address.address1);
         await this.city.setValue(address.city);
         await this.state.selectByAttribute('value', address.state);
-        await this.zipCode.setValue(55662);
+        await this.zipCode.setValue(address.pincode);
         await this.country.selectByVisibleText(address.country);
     }
     async mobileNumber(mobileNumber: number) {
